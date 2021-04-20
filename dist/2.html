@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http_equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Rye Property Management</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.svg" alt="Favicon"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Schema Markup -->
+    <script defer type="application/ld+json">
+
+    </script>
+    
+    <!-- OpenGraph -->
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content=""/>
+
+    <!-- TwitterCard -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+
+</head>
+
+<body>
+
+    <header>
+          
+        <nav class="navbar navbar-expand-md fixed-top  fadeInDown" data-wow-duration="2.5s" id="navbar">
+         
+            <div class="container">
+
+                <a class='transparent' style='display: none;' id='navbarLogo'>Rye Property Management &nbsp;<img src='images/houseIcon.svg' style="height: 20px; padding-bottom: 5px; "></a>
+
+                <button id='navbarToggler' class="navbar-toggler collapsed border-0 ml-auto" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"  aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item hvr-grow-shadow ml-auto">
+                            <a href="#about" title="About">About</a>
+                        </li>
+                        <li class="nav-item hvr-grow-shadow ml-auto">
+                            <a href="#properties" title="Services">Properties</a>
+                        </li>
+                        <li class="nav-item hvr-grow-shadow ml-auto"> 
+                            <a href="#contact" title="Contact">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div id="hero">
+
+            <div class='container h-100 d-flex flex-column justify-content-center'>
+                <div class='row mb-4'>
+                    <div class='col-12 wow fadeInUp' data-wow-duration="1.5s">
+                        <h1 class='text-center'>
+                            <span class='extraLight'>Rye Property</span><br>
+                            <span>Management</span>
+                        </h1>
+                    </div>
+                    <div class='col-12 mt-4 wow fadeInUp' data-wow-duration="1.5s" data-wow-delay='0.5s'>
+                        <hr>
+                        <h2 class='text-center'>Looking after the homes of all our tenants</h2>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </header>
+
+    <div style="height: 70px; background-color: #163058;" id='heroSeparator'></div>
+    
+    <main>
+
+        <section id='about'>
+            <div class='container'>
+                <div class='row'>
+
+                    <div class='col-lg-4 col-12 wow fadeInDown' data-wow-duration="1.5s">
+                        <h2 class='extraLight'>Homes we care <br> about.</h2>
+                        <p class='text-justify light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                    <div class='col-lg-8 col-12 wow fadeInDown' data-wow-duration="1.5s" data-wow-delay="0.5s" id='aboutPhotos'>
+                        <div class='row h-100 ml-2'>
+                            <div class='col-7 p-0'>
+                                <div class='pic1'> 
+                                    <img src="images/house.jpg" alt="" >
+                                </div>
+                                <div class='pic2'>
+                                    <img src="images/houseInterior.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class='col-5 p-0'>
+                                <div class="pic3">
+                                    <img src="images/bathroom.jpg" alt="" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            
+        </section>
+
+        <section id='properties'>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor light" onclick="closeModal();">Exit</span>
+                <div class="modal-content" >
+                
+                    <div class="mySlides text-center">
+                    <div class="numbertext">1 / 6</div>
+                    <!-- <div class="productDesc">Photo 1</div> -->
+                    <picture>
+                        <source srcset="images/house.jpg" type="image/webp">
+                        <img class="img-fluid" src="images/house.jpg" alt="" style="width:100%">
+                    </picture>
+                    </div>
+                
+                    <div class="mySlides text-center">
+                    <div class="numbertext">2 / 6</div>
+                    <!-- <div class="productDesc">Photo 2</div> -->
+                    <picture>
+                        <source srcset="images/houseInterior.jpg" type="image/webp">
+                        <img class="img-fluid" src="images/houseInterior.jpg" alt="" style="width:100%">
+                    </picture>
+                    </div>
+                
+                    <div class="mySlides text-center">
+                    <div class="numbertext">3 / 6</div>
+                    <!-- <div class="productDesc">Photo 3</div> -->
+                    <picture>
+                        <source srcset="images/bathroom.jpg" type="image/webp">
+                        <img class="img-fluid" src="images/bathroom.jpg" alt="" style="width:100%">
+                    </picture>
+                    </div>
+                
+                    <div class="mySlides text-center">
+                    <div class="numbertext">4 / 6</div>
+                    <!-- <div class="productDesc">Photo 4</div> -->
+                    <picture>
+                        <source srcset="images/house.jpg" type="image/webp">
+                        <img class="img-fluid" src="images/house.jpg" alt="" style="width:100%">
+                    </picture>
+                    </div>
+
+                    <div class="mySlides text-center">
+                    <div class="numbertext">5 / 6</div>
+                    <!-- <div class="productDesc">Photo 5</div> -->
+                    <picture>
+                        <source srcset="images/houseInterior.jpg" type="image/webp">
+                        <img class="img-fluid" src="images/houseInterior.jpg" alt="" style="width:100%">
+                    </picture>
+                    </div>
+                
+                    <div class="mySlides text-center">
+                    <div class="numbertext">6 / 6</div>
+                    <!-- <div class="productDesc">Photo 6</div> -->
+                    <picture>
+                        <source srcset="images/bathroom.jpg" type="image/webp">
+                        <img class="img-fluid" src="images/bathroom.jpg" alt="" style="width:100%">
+                    </picture>
+                    </div>
+                
+                
+                    <a class="prev" onclick="plusSlides(-1)" title="Previous Photo">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)" title="Next Photo">&#10095;</a>
+                
+                    <!-- <div class="caption-container"> -->
+                    <!-- <p id="caption"></p> -->
+                    </div>
+
+                </div>
+            </div>
+
+            <div class='container-fluid'>
+                <div class='row'>
+                    <div class='col'>
+                        <h2 class='extraLight text-center wow fadeInUp' data-wow-duration="1.5s">Our Properties</h2>
+
+                            <div class="container mb-5 text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay='0.5s' id='carouselContainer'>
+
+                                <div id='imageOverlay' onclick='exitViewImage()'></div>
+                                
+                                <div class="row mx-auto my-auto">
+                                    <div id="propertyCarousel" class="carousel slide w-100" data-ride="carousel">
+                                        <div class="carousel-inner w-100" role="listbox">
+                                            <div class="carousel-item active">
+                                                <div class="col-md-4">
+                                                    <div class="propertyCard" onclick="openModal();currentSlide(1);">
+                                                        <p>View</p>
+                                                        <img src="images/house.jpg" >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="col-md-4">
+                                                    <div class="propertyCard" onclick="openModal();currentSlide(2);">
+                                                        <p>View</p>
+                                                        <img src="images/houseInterior.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="col-md-4">
+                                                    <div class="propertyCard" onclick="openModal();currentSlide(3);">
+                                                        <p>View</p>
+                                                        <img src="images/bathroom.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="col-md-4">
+                                                    <div class="propertyCard" onclick="openModal();currentSlide(4);">
+                                                        <p>View</p>
+                                                        <img src="images/house.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="col-md-4">
+                                                    <div class="propertyCard" onclick="openModal();currentSlide(5);">
+                                                        <p>View</p>
+                                                        <img src="images/houseInterior.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="col-md-4">
+                                                    <div class="propertyCard" onclick="openModal();currentSlide(6);">
+                                                        <p>View</p>
+                                                        <img src="images/bathroom.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <a class="carouselArrow carousel-control-prev" style="float: left; " href="#propertyCarousel" role="button" data-slide="prev">
+                                            <span class='rounded-circle'>&#10094;</span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+
+                                        <a class="carouselArrow carousel-control-next" href="#propertyCarousel" role="button" data-slide="next">
+                                            <span class='rounded-circle mx-auto'>&#10095;</span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+             
+                                    </div>
+
+                                </div>
+
+                            </div>
+                    
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+
+        <section id='contact'>
+            <div class='container mb-5  wow fadeInDown' data-wow-duration="1.5s">
+                <div class='row'>
+                    <div class='col-12 mb-4'>
+                        <h2 class='extraLight'>Get in touch</h2>
+                    </div>
+
+                    <div class='col-lg-5 order-lg-2 mb-4 light'>
+                        <p class="text-justify">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque deserunt, ad expedita veritatis vero labore soluta. Tempora, tenetur alias rem laboriosam itaque debitis a dolores tempore? Recusandae eaque iure aliquam.
+                        </p>
+
+
+                        <div class="container contactInfo mb-4">
+
+                            <a class="p-0 row" href="tel:+447531009007" target="_blank" title="Contact Number">
+                                <div class="p-0 col-3 d-flex justify-content-center">
+                                    <div class='my-auto'>
+                                        <i class="fas fa-phone fa-2x"></i>
+                                    </div>
+                                </div>
+                                <p class="p-0 col-9 d-flex align-self-center" style="word-wrap: break-word;" >07531009007</p>
+                            </a>
+            
+                        </div>
+
+                        <div class="container contactInfo mb-4">
+
+                            <a class="p-0 row" href="mailto:sales@nottinghamflexiblestorage.co.uk" target="_blank" title="Contact Email">
+                                <div class="p-0 col-3 d-flex justify-content-center">
+                                    <div class='my-auto'>
+                                        <i class="fas fa-envelope fa-2x"></i>
+                                    </div>
+                                </div>
+                                <p class="p-0 col-9 d-flex align-self-center" style="word-wrap: break-word;" >stuart@<br>ryepropertymanagement.co.uk</p>
+                            </a>
+            
+                        </div>
+                        
+
+                    </div>
+
+                    <div class='col-lg-7 order-lg-1 '>
+
+                        <form class="row m-0 p-0"id="contactForm" method="post" action="php/sendFormEmail.php" onsubmit="return validateForm()" name="contactForm">
+        
+                            <div class="form-group col-12 mt-0 ">
+                                <input name="name" type="text" class="form-control" id="nameInput" placeholder="Name">
+                                <p class="formMessage" id="name">Name is invalid.</p>
+                            </div>
+        
+                            <div class="form-group col-12">
+                                <input name="email" type="email" class="form-control" id="emailInput" placeholder="Email">
+                                <p class="formMessage" id="email">Email is invalid.</p>
+                            </div>
+        
+                            <div class="form-group col-12">
+                                <input name="phone" type="text" class="form-control" id="phoneInput" placeholder="Phone Number">
+                                <p class="formMessage" id="phone">Phone Number is invalid.</p>
+                            </div>
+        
+                            <div class="form-group col-12">
+                                <textarea name="message" type="message" class="form-control messageForm" id="messageInput" placeholder="Message"></textarea>
+                                <p class="formMessage" id="message">Message is invalid.</p>
+                            </div>
+                
+                            <div class="col-12 text-center pt-3">
+                                <button type="submit" class="btn primaryBtn" id="sendEnquiryBtn">Send Enquiry</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="pt-4  wow fadeInDown" data-wow-duration="0.5s" id="copyright">
+                <p class="m-0">Rye Property Management &copy; 2021</p>
+            </div>
+            
+        </section>
+
+    
+
+    </main>
+
+    <!-- <script src="js/jquery.js"></script>
+    <script async src="js/bootstrap.js"></script>  -->
+    <script async src="js/fontAwesome.js"  data-auto-replace-svg="nest"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="js/main.js"></script>
+
+
+    </body>
+
+</html>
+
+
+<!-- function viewImage(src) {
+
+    $('#imageOverlay').empty()
+    let img = $('<img>').attr('src', src);
+
+    $('#imageOverlay').append(img)
+    $('#imageOverlay').show()
+}
+
+function exitViewImage() {
+    $('#imageOverlay').hide()
+} -->
+
+
+<!-- #imageOverlay {
+	position: fixed; 
+	display: none;
+	width: 100%; 
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 2;
+	cursor: zoom-out;
+
+	img {
+		width: 70%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+} -->
+
+<!-- <img onclick="viewImage()> -->
