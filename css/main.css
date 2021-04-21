@@ -28,6 +28,16 @@ section {
   }
 }
 
+p {
+  font-size: 0.7em;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1em;
+  }
+}
+
 #properties > .container {
   padding: 0px 50px;
 }
@@ -66,10 +76,19 @@ section {
   background-color: var(--secondary);
   border-radius: 3px  !important;
   color: var(--primary);
-  width: 180px;
-  height: 45px;
+  width: 120px;
+  height: 35px;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
+  font-size: 0.7em;
+}
+
+@media (min-width: 576px) {
+  .primaryBtn {
+    font-size: 1em;
+    width: 180px;
+    height: 45px;
+  }
 }
 
 .primaryBtn:hover {
@@ -133,6 +152,16 @@ nav a:hover {
 @media screen and (min-width: 768px) {
   #navbar a {
     float: left;
+  }
+}
+
+#navbarLogo {
+  font-size: 0.8em !important;
+}
+
+@media (min-width: 576px) {
+  #navbarLogo {
+    font-size: 1em;
   }
 }
 
@@ -520,15 +549,35 @@ nav a:hover {
 
 #contact #contactForm .form-group {
   padding: 0;
-  margin: 15px 0;
+  margin: 5px 0;
+}
+
+@media (min-width: 576px) {
+  #contact #contactForm .form-group {
+    margin: 15px 0;
+  }
 }
 
 #contact #contactForm .form-group input {
   height: 45px;
+  font-size: 0.7em;
+}
+
+@media (min-width: 576px) {
+  #contact #contactForm .form-group input {
+    font-size: 1em;
+  }
 }
 
 #contact #contactForm .form-group textarea {
   height: 120px;
+  font-size: 0.7em;
+}
+
+@media (min-width: 576px) {
+  #contact #contactForm .form-group textarea {
+    font-size: 1em;
+  }
 }
 
 #contact #contactForm .form-group .formMessage {
