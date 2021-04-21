@@ -17,17 +17,32 @@ html, header, body {
 
 section {
 
-    padding: 60px 30px;
+    padding: 60px 30px ;
 
     @media  (min-width: 576px) {
-        padding: 60px;
+        padding: 60px ;
     }
 
     @media  (min-width: 768px) {
-        padding: 120px;
+        padding: 120px ;
     }
     
+}
 
+#properties > .container {
+    padding: 0px 50px ;
+
+    @media  (min-width: 576px) {
+        padding: 0 30px ;
+    }
+
+    @media  (min-width: 768px) {
+        padding: 0 30px ;
+    }
+
+    @media  (min-width: 992px) {
+        padding: 0 80px ;
+    }
 }
 
 .extraLight {
@@ -259,28 +274,11 @@ nav a:hover {
 #about {
     color: var(--secondary);
 
-    #aboutPhotos {
-
-        .pic1 {
-            height: 60%;
-            padding-bottom: 5px;
-        }
-        .pic2 {
-            height: 40%;
-            padding-top: 5px;
-        }
-        .pic3 {
-            height: 100%;
-            padding-left: 10px;
-        }
-
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        }
-
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
 }
@@ -395,7 +393,23 @@ nav a:hover {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+
+
+
+    .mySlides {
+        display: none;
+
+        // picture {
+        //     height: 50% !important;
+        // }
+        
+        img {
+            width: 100%;
+        }
+    
+    }
 
     @media (min-width:768px) { 
         left: 40%;
@@ -411,7 +425,9 @@ nav a:hover {
 }
   
 .close {
+    z-index: 10;
     color: white;
+    background-color: transparent;
     position: absolute;
     text-shadow: none;
     top: 40px;
@@ -425,13 +441,11 @@ nav a:hover {
     color: var(--secondary);
     text-decoration: none;
     cursor: pointer;
-  }
+}
   
-  .mySlides {
-    display: none;
-  }
+
   
-  .prev, .next {
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -445,40 +459,28 @@ nav a:hover {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
+}
   
-  .next {
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
   
-  .prev:hover, .next:hover {
+.prev:hover, .next:hover {
     color: var(--secondary) !important;
-  }
+}
   
-  .numbertext {
+.numbertext {
     color: white;
+    background-color: var(--primary);
+    border: 3px solid var(--primary);
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
+}
   
-//   .productDesc {
-//     position: absolute;
-//     width: 100%;
-//     background-color: white;
-//     bottom: 0;
-//     padding: 5px;
-//   }
-  
-//   .caption-container {
-//     text-align: center;
-//     background-color: black;
-//     padding: 2px 16px;
-//     color: white;
-//   }
-  
+
 
 // Contact 
 
