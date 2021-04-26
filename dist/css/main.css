@@ -161,7 +161,7 @@ nav a:hover {
 
 @media (min-width: 576px) {
   #navbarLogo {
-    font-size: 1em;
+    font-size: 1em !important;
   }
 }
 
